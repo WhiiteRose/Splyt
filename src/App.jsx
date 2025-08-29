@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import NavBar from "./components/NavBar";
+import BenefitSection from "./sections/BenefitSection";
 import FlavourSection from "./sections/FlavourSection";
 import HeroSection from "./sections/HeroSection";
 import MessageSection from "./sections/MessageSection";
@@ -29,6 +30,7 @@ const App = () => {
           <MessageSection />
           <FlavourSection />
           <NutritionSection />
+          <BenefitSection />
         </div>
       </div>
     </main>
