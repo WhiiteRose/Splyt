@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import FlavourSection from "./sections/FlavourSection";
 import HeroSection from "./sections/HeroSection";
 import MessageSection from "./sections/MessageSection";
+import NutritionSection from "./sections/NutritionSection";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -27,6 +28,7 @@ const App = () => {
           <HeroSection />
           <MessageSection />
           <FlavourSection />
+          <NutritionSection />
         </div>
       </div>
     </main>
