@@ -14,7 +14,6 @@ import FooterSection from "./sections/FooterSection";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const App = () => {
-
   useGSAP(() => {
     ScrollSmoother.create({
       smooth: 3,
@@ -27,15 +26,14 @@ const App = () => {
       <NavBar />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-
           <HeroSection />
           <MessageSection />
           <FlavourSection />
           <NutritionSection />
 
           <div>
-          <BenefitSection />
-          <TestimonialSection />
+            <BenefitSection />
+            <TestimonialSection />
           </div>
 
           <FooterSection />
