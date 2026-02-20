@@ -21,11 +21,11 @@ The landing hero features a video background with floating product cans and bold
 
 ![Hero Section](public/screenshots/hero.png)
 
-### Hero to Message Transition
+### Nutrition Details
 
-Smooth scroll-triggered transition with parallax rotation effects between the hero and the inspiring message section.
+Nutrition section with animated product imagery, nutrient facts bar, and radial gradient background.
 
-![Hero to Message](public/screenshots/hero-message.png)
+![Nutrition Details](public/screenshots/details.png)
 
 ### Flavor Carousel
 
