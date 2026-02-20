@@ -1,68 +1,72 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { useRef } from "react";
-import { useMediaQuery } from "react-responsive";
-import { flavorlists } from "../constants";
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { useRef } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { flavorlists } from '../constants';
 
 const FlavorSlider = () => {
   const sliderRef = useRef();
 
-  const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+  const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
 
   useGSAP(() => {
-    const scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
+    const scrollAmount =
+      sliderRef.current.scrollWidth - window.innerWidth;
 
     if (!isTablet) {
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".flavor-section",
-          start: "2% top",
-          end: `+=${scrollAmount + 1500}px`,
+          trigger: '.flavor-section',
+          start: '2% top',
+          end: `+=${scrollAmount}px`,
           scrub: true,
           pin: true,
         },
       });
 
-      tl.to(".flavor-section", {
-        x: `-${scrollAmount + 1500}px`,
-        ease: "power1.inOut",
+      tl.to('.flavor-inner', {
+        x: -scrollAmount,
+        ease: 'none',
       });
     }
 
     const titleTl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".flavor-section",
-        start: "top top",
-        end: "bottom 80%",
+        trigger: '.flavor-section',
+        start: 'top top',
+        end: 'bottom 80%',
         scrub: true,
       },
     });
 
     titleTl
-      .to(".first-text-split", {
+      .to('.first-text-split', {
         xPercent: -30,
-        ease: "power1.inOut",
+        ease: 'power1.inOut',
       })
       .to(
-        ".flavor-text-scroll",
+        '.flavor-text-scroll',
         {
           xPercent: -22,
-          ease: "power1.inOut",
+          ease: 'power1.inOut',
         },
-        "<"
+        '<'
       )
       .to(
-        ".second-text-split",
+        '.second-text-split',
         {
           xPercent: -10,
-          ease: "power1.inOut",
+          ease: 'power1.inOut',
         },
-        "<"
+        '<'
       );
   });
 
   return (
-    <div ref={sliderRef} className="slider-wrapper">
+    <div
+      ref={sliderRef}
+      className="slider-wrapper"
+    >
       <div className="flavors">
         {flavorlists.map((flavor) => {
           return (

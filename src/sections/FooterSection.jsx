@@ -1,9 +1,9 @@
-import React from "react";
-import { useMediaQuery } from "react-responsive";
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 const FooterSection = () => {
   const isMobile = useMediaQuery({
-    query: "(max-width: 768px)",
+    query: '(max-width: 768px)',
   });
 
   return (
@@ -38,20 +38,29 @@ const FooterSection = () => {
 
         <div className="flex-center gap-5 relative z-10 md:mt-20 mt-5">
           <div className="social-btn">
-            <img src="./images/yt.svg" alt="" />
+            <img
+              src="./images/yt.svg"
+              alt=""
+            />
           </div>
           <div className="social-btn">
-            <img src="./images/insta.svg" alt="" />
+            <img
+              src="./images/insta.svg"
+              alt=""
+            />
           </div>
           <div className="social-btn">
-            <img src="./images/tiktok.svg" alt="" />
+            <img
+              src="./images/tiktok.svg"
+              alt=""
+            />
           </div>
         </div>
 
         <div className="mt-40 md:px-10 px-5 flex gap-10 md:flex-row flex-col justify-between text-milk font-paragraph md:text-lg font-medium">
           <div className="flex items-center md:gap-16 gap-5">
             <div>
-              <p>SPYLT Flavors</p>
+              <p>SPLYT Flavors</p>
             </div>
             <div>
               <p>Chug Club</p>
@@ -67,8 +76,8 @@ const FooterSection = () => {
 
           <div className="md:max-w-lg">
             <p>
-              Get Exclusive Early Access and Stay Informed About Product
-              Updates, Events, and More!
+              Get Exclusive Early Access and Stay Informed About
+              Product Updates, Events, and More!
             </p>
             <div className="flex justify-between items-center border-b border-[#D9D9D9] py-5 md:mt-10">
               <input
@@ -76,12 +85,15 @@ const FooterSection = () => {
                 placeholder="Enter your email"
                 className="w-full placeholder:font-sans placeholder:text-[#999999]"
               />
-              <img src="/images/arrow.svg" alt="arrow" />
+              <img
+                src="/images/arrow.svg"
+                alt="arrow"
+              />
             </div>
           </div>
         </div>
         <div className="copyright-box">
-          <p>Copyright © 2025 Spylt - All Rights Reserved</p>
+          <p>Copyright © 2025 Splyt - All Rights Reserved</p>
           <div className="flex items-center gap-7">
             <p>Privacy Policy</p>
             <p>Terms of Service</p>
