@@ -1,171 +1,139 @@
-<div>
- <br />
-  <div align="center">
-     <img src="public/images/Final.png" style="border-radius:10px;" alt="Splyt Banner">
-  </div>
- <br />
- <br />
+<div align="center">
 
- <div align="center">
-   <img src="https://img.shields.io/badge/-React_19-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-   <img src="https://img.shields.io/badge/-Tailwind_CSS_v4-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-   <img src="https://img.shields.io/badge/-GSAP_3-black?style=for-the-badge&logoColor=white&logo=greensock&color=88CE02" alt="gsap" />
-   <img src="https://img.shields.io/badge/-Vite-black?style=for-the-badge&logoColor=white&logo=vite&color=646CFF" alt="vite" />
- </div>
+# 🥛 Splyt — Freaking Delicious Caffeinated Flavor Milk
 
- <h3 align="center" style="font-weight:700;font-size:30px;">Splyt — GSAP‑powered Single‑Page Experience</h3>
+A modern, animated product landing page for **Splyt** caffeinated flavored milk — built with **React**, **GSAP**, and **Tailwind CSS**. Featuring smooth scroll-driven animations, horizontal flavor carousels, and cinematic video sections.
 
-  <div align="center">
-    I built <b>Splyt</b> as a modern, single‑page front‑end using <b>React</b>, <b>Tailwind CSS</b>, and <b>GSAP</b> for smooth, scroll‑based transitions and timeline animations.  
-    The goal is to deliver a fast, immersive UI with <b>Vite</b> as the build tool.
-   </div>
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![GSAP](https://img.shields.io/badge/GSAP-3.13-88CE02?logo=greensock&logoColor=white)](https://gsap.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 📸 Screenshots
 
-1. 🚀 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. ✨ [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🧩 [Usage Notes](#usage-notes)
-6. 🖼️ [Preview](#preview)
-7. 🗂️ [Project Structure](#project-structure)
-8. 📝 [License](#license)
+### Hero Section
 
----
+The landing hero features a video background with floating product cans and bold typography animations.
 
-## 🚀 Introduction
+![Hero Section](public/screenshots/hero.png)
 
-**Splyt** showcases how to create crisp **scroll transitions**, **pinned sections**, and **micro‑interactions** with **GSAP** in a **React** single‑page app.  
-Styling is handled with **Tailwind CSS**, and the development workflow is powered by **Vite** for instant HMR and fast builds.
+### Hero to Message Transition
 
----
+Smooth scroll-triggered transition with parallax rotation effects between the hero and the inspiring message section.
 
-## ⚙️ Tech Stack
+![Hero to Message](public/screenshots/hero-message.png)
 
-- ⚛️ **React 19**
-- 🎨 **Tailwind CSS v4**
-- 🌀 **GSAP 3** (timelines, scroll‑based animations)
-- ⚡ **Vite** (dev server & build)
+### Flavor Carousel
+
+A horizontal scroll-driven flavor showcase displaying all 6 delicious flavors with dynamic tilted cards.
+
+![Flavors](public/screenshots/flavors.png)
+
+### Video Section
+
+Full-screen cinematic video section with an expanding circle reveal animation triggered by scroll.
+
+![Video](public/screenshots/video.png)
 
 ---
 
 ## ✨ Features
 
-- Smooth **scroll‑driven transitions** (e.g., fades, transforms, parallax)
-- **Timeline‑based** choreography for complex sequences
-- **Pinned** / staged sections triggered on scroll
-- Responsive, utility‑first styling with **Tailwind CSS**
-- **Single‑Page** front‑end (no backend)
+- 🎬 **Scroll-driven animations** — GSAP ScrollTrigger powers smooth parallax, pinning, and reveal effects
+- 🥤 **Horizontal flavor carousel** — Scroll vertically to browse 6 flavors horizontally with tilted card layouts
+- 🎥 **Video backgrounds** — Hero and benefits sections with embedded video and circular reveal animations
+- 📱 **Fully responsive** — Adapts seamlessly from mobile to desktop with conditional rendering
+- ⚡ **Smooth scrolling** — GSAP ScrollSmoother for buttery-smooth scroll experience
+- 🎨 **Bold typography** — Antonio font with animated text splits, clip-path reveals, and staggered character animations
+- 💬 **Testimonials** — Fan video testimonial cards with unique rotations and stacking layouts
 
 ---
 
-## 🤸 Quick Start
+## 🛠️ Tech Stack
+
+| Technology           | Purpose                                                     |
+| -------------------- | ----------------------------------------------------------- |
+| **React 19**         | Component-based UI                                          |
+| **GSAP 3.13**        | Scroll animations, ScrollTrigger, ScrollSmoother, SplitText |
+| **Tailwind CSS 4**   | Utility-first styling                                       |
+| **Vite 6**           | Fast development & build                                    |
+| **react-responsive** | Responsive breakpoint hooks                                 |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** ≥ 18
+- **npm** ≥ 9
+
+### Installation
 
 ```bash
-# 1) Clone
-git clone https://github.com/your-username/Splyt.git
+# Clone the repository
+git clone https://github.com/WhiiteRose/Splyt.git
 cd Splyt
 
-# 2) Install
+# Install dependencies
 npm install
-# or
-yarn
-# or
-pnpm i
 
-# 3) Dev server
+# Start development server
 npm run dev
-# (Vite will print the local URL, typically http://localhost:5173)
+```
 
-# 4) Production build (optional)
+The app will be available at `http://localhost:5173`.
+
+### Build for Production
+
+```bash
 npm run build
 npm run preview
 ```
 
 ---
 
-## 🧩 Usage Notes
+## 📁 Project Structure
 
-- **GSAP setup**
-  ```bash
-  npm i gsap
-  ```
-  In your React component:
-  ```jsx
-  import { useLayoutEffect, useRef } from "react";
-  import gsap from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
-  gsap.registerPlugin(ScrollTrigger);
-
-  export default function Hero() {
-    const root = useRef(null);
-
-    useLayoutEffect(() => {
-      const ctx = gsap.context(() => {
-        gsap.from(".hero-title", { y: 60, opacity: 0, duration: 0.8, ease: "power2.out" });
-
-        gsap.to(".pin-section", {
-          scrollTrigger: {
-            trigger: ".pin-section",
-            start: "top top",
-            end: "+=150%",
-            pin: true,
-            scrub: 0.6,
-          },
-          opacity: 1,
-        });
-      }, root);
-
-      return () => ctx.revert();
-    }, []);
-
-    return (
-      <section ref={root} className="min-h-dvh flex-center">
-        <h1 className="hero-title text-5xl md:text-7xl font-bold">Splyt</h1>
-        <div className="pin-section h-[200vh]" />
-      </section>
-    );
-  }
-  ```
-
-- **Tailwind CSS v4**
-  - Ensure your CSS includes Tailwind:
-    ```css
-    /* src/index.css */
-    @import "tailwindcss";
-    ```
-  - Use utility classes directly in JSX. (If you’re using custom themes, add them via the `@theme` block in v4.)
-
----
-
-## 🖼️ Preview
-
-![Splyt Preview](public/images/Final.png "Splyt — GSAP-powered single-page experience")
-
----
-
-## 🗂️ Project Structure
-
-```bash
+```
 Splyt/
-├─ public/
-│  └─ images/
-│     └─ Final.png
-├─ src/
-│  ├─ components/
-│  ├─ App.jsx
-│  ├─ main.jsx
-│  └─ index.css
-├─ package.json
-├─ vite.config.js
-└─ README.md
+├── public/
+│   ├── fonts/          # Custom ProximaNova font
+│   ├── images/         # Product images, backgrounds, SVGs
+│   ├── videos/         # Hero, pin, and testimonial videos
+│   └── screenshots/    # README screenshots
+├── src/
+│   ├── components/     # Reusable components (NavBar, FlavorSlider, etc.)
+│   ├── constants/      # Flavor, nutrient, and testimonial data
+│   ├── sections/       # Page sections (Hero, Message, Flavour, etc.)
+│   ├── App.jsx         # Main app with ScrollSmoother setup
+│   ├── index.css       # Global styles, Tailwind config, animations
+│   └── main.jsx        # React entry point
+└── index.html
 ```
 
 ---
 
-## 📝 License
+## 🎨 Sections Overview
 
-This project is released under the MIT License. Feel free to fork and adapt.
+| Section          | Description                                            |
+| ---------------- | ------------------------------------------------------ |
+| **Hero**         | Video background, animated title, CTA button           |
+| **Message**      | Scroll-revealed text with word-by-word color animation |
+| **Flavors**      | Horizontal scroll carousel with 6 flavor cards         |
+| **Nutrition**    | Radial gradient background with nutrition facts bar    |
+| **Benefits**     | Stacked animated titles with video circle reveal       |
+| **Testimonials** | Fan video cards with stacking layout                   |
+| **Footer**       | Social links, email input, and copyright               |
+
+---
+
+<div align="center">
+
+Made with ❤️ by **WhiiteRose**
+
+</div>
